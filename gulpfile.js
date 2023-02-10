@@ -21,14 +21,15 @@ const browserSync = require("browser-sync").create();
 /* Paths */
 const srcPath = 'src/';
 const distPath = 'dist/';
+const publicPath = 'public/';
 
 const path = {
     build: {
-        html:   distPath,
-        js:     distPath + "assets/js/",
-        css:    distPath + "assets/css/",
-        images: distPath + "assets/images/",
-        fonts:  distPath + "assets/fonts/"
+        html:   publicPath,
+        js:     publicPath + "assets/js/",
+        css:    publicPath + "assets/css/",
+        images: publicPath + "assets/images/",
+        fonts:  publicPath + "assets/fonts/"
     },
     src: {
         html:   srcPath + "*.html",
