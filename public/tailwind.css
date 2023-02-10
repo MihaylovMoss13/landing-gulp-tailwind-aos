@@ -987,6 +987,14 @@ video {
   gap: 0px;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -1374,6 +1382,16 @@ video {
   padding-right: 3rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -1460,6 +1478,10 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -1583,6 +1605,17 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-green-800 {
+  --tw-shadow-color: #166534;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline-0 {
@@ -1813,6 +1846,10 @@ video {
     width: auto;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-nowrap {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1826,6 +1863,10 @@ video {
   .lg\:justify-between {
     -ms-flex-pack: justify;
         justify-content: space-between;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1913,6 +1954,11 @@ video {
   .lg\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pt-16 {

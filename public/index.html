@@ -43,7 +43,7 @@
       </nav>
     
       <div :class="isOpen ? 'border-b border-white/10' : ''" class="flex md:hidden py-4 px-6 text-white justify-between">
-        <p class="Monserrat text-xl">Левина Алина, <span class="text-base">психолог</span></p>
+        <p class="Philosopher text-xl">Левина Алина, <span class="text-base">психолог</span></p>
         <button @click="isOpen = !isOpen" type="button" class="text-white/90 focus focus:text-white/60" aria-label=" menu">
           <i :class="isOpen ? 'fa-xmark' : 'fa-bars'" class="fa-solid text-xl"></i>
         </button>
@@ -301,19 +301,23 @@
                 <h3 class="lg:text-2xl text-xl md:mb-0 mb-8 md:w-auto w-full">50 <span class="text-sm">минут</span>, 4500 <span class="text-sm">рублей</span></h3>
                 <!-- Dialog Contents -->
                 <div id="dialog-content" style="display:none;max-width:760px; padding: 0rem 0rem;">
-                  <div class="grid items-left grid-cols-2">
-                    <img src="./assets/images/1.jpeg" />
-                    <div class="py-8 px-12">
+                  <div class="grid items-left lg:grid-cols-2">
+                    <div class="hidden lg:flex">
+                      <img src="./assets/images/1.jpeg" />
+                    </div>
+                    <div class="py-8 px-3 lg:px-12">
                       <h2 class="font-semibold text-xl">Запишитесь прямо сейчас!</h2>
                       <h3 class="text-lg pt-1">Красивая длинная фраза! Красивая длинная фраза</h3>
-                      <form action="./formSend.php" class="grid pt-4 grid-cols-1 space-y-5">
-                        <input type="text" placeholder="Имя" required class="border-[1px] border-neutral-300 px-5 py-2 rounded-full focus:outline-none" />
-                        <input type="tel" placeholder="Телефон" required class="border-[1px] border-neutral-300 px-5 py-2 rounded-full outline-0 focus:outline-none" />
-                        <button type="submit" class="btn bg-green-800 border-green-800 text-white rounded-full py-2 px-9 uppercase">Записаться</button>
-                        <label for="label-agree">
-                          <input type="checkbox" name="" id="label-agree">
-                          Вы соглашаетесь с <a href="" class="border-b-2 border-black/20">условиями обработки персональных данных</a>
-                        </label>
+                      <form action="./formSend.php" class="grid pt-4 grid-cols-1 space-y-6">
+                        <input type="text" placeholder="Имя" required class="border-[1px] border-neutral-300 px-5 py-3 rounded-lg focus:outline-none" />
+                        <input type="tel" placeholder="Телефон" required class="border-[1px] border-neutral-300 px-5 py-3 rounded-lg outline-0 focus:outline-none" />
+                        <div class="grid lg:gap-2 gap-5 pt-2 justify-center">
+                          <button type="submit" class="btn bg-green-800 shadow-2xl shadow-green-800 text-white rounded-lg py-4 px-9 uppercase">Записаться</button>
+                          <label for="label-agree">
+                            <input type="checkbox" name="" id="label-agree">
+                            Вы соглашаетесь с <a href="" class="border-b-2 border-black/20">условиями обработки персональных данных</a>
+                          </label>
+                        </div>
                       </form>
                     </div>
                   </div>
