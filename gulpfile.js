@@ -55,7 +55,7 @@ const path = {
 function serve() {
     browserSync.init({
         server: {
-            baseDir: "./" + distPath
+            baseDir: "./" + publicPath
         }
     });
 }

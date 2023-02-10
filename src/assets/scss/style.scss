@@ -7,6 +7,11 @@ body {
   transition: .3s all ease-in;
   max-width: 1920px;
 
+  input:focus {
+    border-color: #000000;
+    outline: none !important;
+  }
+
   .Commissioner {
     font-family: 'Commissioner', sans-serif;
 

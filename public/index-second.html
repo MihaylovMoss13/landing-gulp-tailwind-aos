@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/@fontawesome/fontawesome-free/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/@fontawesome/fontawesome-free/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/@fontawesome/fontawesome-free/css/solid.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&family=Jost:wght@500&family=Merriweather:ital,wght@0,700;1,700&family=Montserrat:wght@100;700&family=Pacifico&family=Philosopher:wght@400;700&family=Ubuntu+Condensed&family=Unbounded:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Алена Левина Владимировна | Психоаналитический терапевт</title>
+</head>
+<body class="bg-[#282429] m-auto text-gray-300">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    
+    <header x-data="{ isOpen: false }" class="bg-[#282429] fixed left-0 top-0 m-auto z-20 shadow-xl w-screen">
+      <nav class="container m-auto md:flex items-center justify-between hidden">
+        <p class="text-white Philosopher text-3xl">Левина Алина, <span class="text-base">психолог</span></p>
+        <ul class="flex justify-between space-x-16 text-white/70 py-4 px-0">
+          <li class="lg:w-auto w-full"><a href="#s-chem-rabotayo" class="hover:underline underline-offset-2">с чем работаю</a></li>
+          <li class="lg:w-auto w-full"><a href="#obo-mne" class="hover:underline underline-offset-2">обо мне</a></li>
+          <li class="lg:w-auto w-full"><a href="#skolko-stoit" class="hover:underline underline-offset-2">сколько стоит</a></li>
+          <li class="lg:w-auto w-full"><a href="#format-vstrech" class="hover:underline underline-offset-2">формат работы</a></li>
+          <li class="lg:w-auto w-full"><a href="#contact" class="hover:underline underline-offset-2">контакты</a></li>
+        </ul>
+      </nav>
+    
+      <div :class="isOpen ? 'border-b border-white/10' : ''" class="flex md:hidden py-4 px-6 text-white justify-between">
+        <p class="Monserrat text-xl">Левина Алина, <span class="text-base">психолог</span></p>
+        <button @click="isOpen = !isOpen" type="button" class="text-white/90 focus focus:text-white/60" aria-label=" menu">
+          <i :class="isOpen ? 'fa-xmark' : 'fa-bars'" class="fa-solid text-xl"></i>
+        </button>
+      </div>
+      
+      <ul :class="isOpen ? 'block' : 'hidden'" class="py-10 pt-6 px-6 flex flex-wrap text-xl space-y-6 text-white/70 justify-center overflow-scroll w-full">
+        <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#s-chem-rabotayo">с чем работаю</a></li>
+        <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#obo-mne">обо мне</a></li>
+        <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#skolko-stoit">сколько стоит</a></li>
+        <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#format-vstrech">формат работы</a></li>
+        <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#contact">контакты</a></li>
+    
+        <ul class="text-2xl flex space-x-8">
+          <li>
+            <a href="tel:+79054960000">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send/?phone=79054960000&text=Здравствуйте, хочу записаться на консультацию.&nbsp;" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@levina.pro">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/levimation">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </header>
+    
+
+      
+    <section class="h-screen w-full flex lg:flex-nowrap flex-wrap overflow-hidden bg-white/10">
+      <div class="bg-[url('assets/images/section_bg1.jpeg')] bg-cover bg-black/30 bg-center flex flex-col justify-center items-center relative lg:w-1/2 w-full">
+        <div class="z-10">
+          <h4 class="text-center md:text-4xl text-2xl mb-10 text-white">Если вы читаете это:</h4>
+          <div class="flex lg:flex-nowrap flex-wrap lg:text-left text-center lg:justify-start justify-center text-white lg:space-x-10">
+            <div class="lg:mb-0 mb-7">
+              <h4 class="text-4xl text-red-700 mb-2">Плохая новость</h4>
+              <h4 class="text-2xl italic">"Вам сейчас трудно"</h4>
+            </div>
+            <div class="">
+              <h4 class="text-4xl text-green-700 mb-2">Хорошая</h4>
+              <h4 class="text-2xl italic">"Вы в надежных руках"</h4>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bg-gradient-to-b from-[#282429]/90 to-[#282429]/90 top-0 left-0 h-full w-full"></div>
+      </div>
+      <div class="bg-[url('assets/images/1.jpeg')] bg-cover bg-center lg:relative absolute top-0 order-1 h-screen lg:w-1/2 w-full">
+        <div class="lg:hidden absolute bg-gradient-to-t from-gray-900 to-gray-900/30 top-0 left-0 h-full w-full"></div>
+      </div>
+    </section>
+      
+    <section id="client" class="flex flex-col items-start justify-center 2xl:py-24 xl:py-16 py-12">
+      <div class="flex justify-end w-full pr-10">
+        <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">клиенты</span>
+      </div>
+      <div class="flex md:flex-nowrap flex-wrap pt-6 2xl:space-x-20 space-x-10 items-end w-full">
+        <div class="lg:w-3/5 w-11/12">
+          <img src="assets/images/section_client.jpeg" class="w-full">
+        </div>
+        <div class="lg:w-2/5 w-full mt-6 pr-4 3xl:text-8xl 2xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-white">
+          <p class="mb-6">мои приёмы посещают женщины и мужчины в возрасте от 14 лет</p>
+        </div>
+      </div>
+    </section>
+      
+    <section id="s-chem-rabotayo" class="flex flex-col items-start justify-center 2xl:py-24 xl:py-16 py-24">
+      <div class="flex justify-end pl-10">
+        <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">с чем работаю</span>
+      </div>
+      <div class="flex md:flex-nowrap flex-wrap lg:pt-16 pt-8 space-x-10 items-end w-full">
+        <div class="md:w-10/12 w-full px-16 mx-auto" id="accordion-collapse" data-accordion="collapse">
+          <div class="transition text-white">
+            <div class="accordion-header cursor-pointer border-b-[1px] border-black transition flex py-4 items-center justify-between">
+              <h3 class="lg:text-2xl text-xl">Семейные трудности</h3>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="accordion-content space-y-5 overflow-hidden max-h-0">
+              <div class="py-5">
+                <ul>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                </ul>
+                <button class="rounded-full py-1 px-6 pb-2 mt-4 border border-gray-300 text-gray-300 text-xl">записаться на консультацию</button>
+              </div>
+            </div>
+          </div>
+          <div class="transition text-white">
+            <div class="accordion-header cursor-pointer border-b-[1px] border-black transition flex py-4 items-center justify-between">
+              <h3 class="lg:text-2xl text-xl">Сложности в отношениях</h3>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="accordion-content space-y-5 overflow-hidden max-h-0">
+              <div class="py-5">
+                <ul>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                </ul>
+                <button class="rounded-full py-1 px-6 pb-2 mt-4 border border-gray-300 text-gray-300 text-xl">записаться на консультацию</button>
+              </div>
+            </div>
+          </div>
+          <div class="transition text-white">
+            <div class="accordion-header cursor-pointer border-b-[1px] border-black transition flex py-4 items-center justify-between">
+              <h3 class="lg:text-2xl text-xl">Личностное развитие и самооценка</h3>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="accordion-content space-y-5 overflow-hidden max-h-0">
+              <div class="py-5">
+                <ul>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                </ul>
+                <button class="rounded-full py-1 px-6 pb-2 mt-4 border border-gray-300 text-gray-300 text-xl">записаться на консультацию</button>
+              </div>
+            </div>
+          </div>
+          <div class="transition text-white">
+            <div class="accordion-header cursor-pointer border-b-[1px] border-black transition flex py-4 items-center justify-between">
+              <h3 class="lg:text-2xl text-xl">Эмоциональные проблемы</h3>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="accordion-content space-y-5 overflow-hidden max-h-0">
+              <div class="py-5">
+                <ul>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                </ul>
+                <button class="rounded-full py-1 px-6 pb-2 mt-4 border border-gray-300 text-gray-300 text-xl">записаться на консультацию</button>
+              </div>
+            </div>
+          </div>
+          <div class="transition text-white">
+            <div class="accordion-header cursor-pointer border-b-[1px] border-black transition flex py-4 items-center justify-between">
+              <h3 class="lg:text-2xl text-xl">Профессиональное самоопределение</h3>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="accordion-content space-y-5 overflow-hidden max-h-0">
+              <div class="py-5">
+                <ul>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                  <li>проблемы в отношениях с супругом</li>
+                </ul>
+                <button class="rounded-full py-1 px-6 pb-2 mt-4 border border-gray-300 text-gray-300 text-xl">записаться на консультацию</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <style>
+          .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+          }
+        </style>
+    
+        <script>
+          const accordionHeader = document.querySelectorAll(".accordion-header");
+          accordionHeader.forEach((header) => {
+            header.addEventListener("click", function () {
+              const accordionContent = header.parentElement.querySelector(".accordion-content");
+              let accordionMaxHeight = accordionContent.style.maxHeight;
+    
+              // Condition handling
+              if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+                accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
+                header.querySelector(".fa-solid").classList.remove("fa-plus");
+                header.querySelector(".fa-solid").classList.add("fa-minus");
+              } else {
+                accordionContent.style.maxHeight = `0px`;
+                header.querySelector(".fa-solid").classList.add("fa-plus");
+                header.querySelector(".fa-solid").classList.remove("fa-minus");
+              }
+            });
+          });
+        </script>
+      </div>
+    </section>
+    
+    <section id="obo-mne" class="flex flex-col items-start justify-start">
+      <div class="flex md:flex-nowrap flex-wrap space-x-10 items-start">
+        <div class="lg:w-3/5 w-full mt-6 pl-10 pr-4 py-16 lg:text-3xl text-3xl text-white">
+          <div class="flex md:flex-nowrap flex-wrap pb-7 w-full">
+            <div class="lg:w-1/2 w-full">
+              <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">обо мне</span>
+            </div>
+            <div class="lg:pt-0 pt-10 lg:w-1/2 w-full">
+              <p class="mb-6 text-end">Я психолог, семейный психотерапевт, специалист по работе с семьями, взрослыми и подростками</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap w-3/5">
+            <p class="text-left pb-7">НИУ ВШЭ - Национальный исследовательский университет "Высшая школа экономики", магистр психологии</p>
+            <p class="text-left pb-10">Российский государственный университет, клинический психолог</p>
+          </div>
+          <div class="flex md:flex-nowrap flex-wrap items-end w-full">
+            <div class="lg:w-4/6 w-full">
+              <p class="text-left">Сексотерапия, психодрама, психоаналитическая терапия</p>
+            </div>
+            <div class="lg:w-2/6 w-full lg:pt-0 pt-6 lg:mb-3 md:text-end">
+              <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">квалификация</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-2/5 w-full">
+          <img src="assets/images/2.jpeg" class="w-full">
+        </div>
+      </div>
+    </section>
+    
+    <section id="skolko-stoit" class="bg-[url('assets/images/section_bg2.jpeg')] bg-cover bg-center relative h-screen">
+      <div class="z-[1] relative flex flex-wrap items-start h-screen w-full">
+        <div class="flex pt-24 pl-10 w-full">
+          <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">сколько стоит</span>
+        </div>
+        <div class="md:w-10/12 w-full px-16 mx-auto">
+          <div class="transition text-white">
+            <div class="accordion-header border-b-[1px] border-white/50 transition pb-6">
+              <h3 class="lg:text-2xl text-xl w-full">Личная терапия, 50 минут</h3>
+              <div class="flex justify-end items-center w-full space-x-9">
+                <h3 class="lg:text-2xl text-xl">3500 рублей</h3>
+                <a href="https://api.whatsapp.com/send/?phone=79054960000&amp;text=Здравствуйте,&nbsp;пишу Вам с сайта.&nbsp;Хочу&nbsp;получить&nbsp;личную&nbsp;консультацию&nbsp;" target="_blank" class="border border-white/50 rounded-full py-3 px-5 uppercase">Записаться
+                <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="transition text-white">
+            <div class="accordion-header border-b-[1px] border-white/50 transition pt-10 pb-6">
+              <h3 class="lg:text-2xl text-xl w-full">Парная терапия, 50-80 минут</h3>
+              <div class="flex justify-end items-center w-full space-x-9">
+                <h3 class="lg:text-2xl text-xl">3500 рублей</h3>
+                <a class="border border-white/50 rounded-full py-3 px-5 uppercase">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bg-gradient-to-b from-[#282429]/90 to-[#282429]/90 top-0 left-0 z-0 h-full w-full"></div>
+    </section>
+    
+    <section id="format-vstrech" class="flex flex-col items-center justify-center relative h-screen">
+      <div class="absolute top-10 right-2 flex justify-end pt-8 pr-10">
+        <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">формат встреч</span>
+      </div>
+    
+      <div class="flex md:flex-nowrap flex-wrap mt-20 space-x-10 items-center">
+        <div class="flex items-start justify-between m-auto space-x-40 text-white lg:w-2/4">
+          <div class="flex flex-col items-center text-center w-1/2">
+            <p class="text-xl mb-3">Онлайн</p>
+            <img class="mb-4 h-52" src=".assets/images/online.png">
+            <p class="text-xl">Выбирается любая удобная для Вас платформа для консультаций.</p>
+            <p class="mb-6 text-xl">Например, Facetime, Telegram, Whatsapp или Яндекс Телемост.</p>
+            <a href="https://api.whatsapp.com/send/?phone=79054960000&amp;text=Здравствуйте,&nbsp;пишу Вам с сайта.&nbsp;Хочу&nbsp;получить&nbsp;online&nbsp;консультацию&nbsp;" target="_blank" class="relative border border-white/50 rounded-full py-3 px-9 uppercase">Записаться
+              <div class="absolute -top-3 -right-3">
+                <i class="text-3xl fa-brands fa-whatsapp"></i>
+              </div>
+            </a>
+          </div>
+    
+          <div class="flex flex-col items-center text-center w-1/2">
+            <p class="text-xl mb-3">Личная встреча</p>
+            <img class="mb-4 h-52" src=".assets/images/user.png">
+            <p class="mb-6 text-xl">Приглашаю для личного разговора в мой кабинет по адресу: г.Москва, Метро Смоленская</p>
+            <a href="https://api.whatsapp.com/send/?phone=79054960000&amp;text=Здравствуйте,&nbsp;пишу Вам с сайта.&nbsp;Хочу&nbsp;получить&nbsp;личную&nbsp;встречу&nbsp;" target="_blank" class="relative py-3 pt-2 px-14 border border-white/50 rounded-full hover:bg-white hover:text-black text-3xl">записаться
+              <div class="absolute top-1.5 right-6">
+                <i class="text-2xl fa-brands fa-whatsapp"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="relative">
+      <div class="flex md:flex-nowrap flex-wrap space-x-10 items-start">
+        <div class="lg:w-3/5 w-full mt-6 pl-10 pr-4 py-16 lg:text-3xl text-3xl text-white">
+          <div class="flex md:flex-nowrap flex-wrap pb-7 w-full">
+            <div class="lg:w-1/2 w-full">
+              <span class="rounded-full py-1 px-6 pb-2 border border-gray-300 text-gray-300 text-2xl">контакты</span>
+            </div>
+            <div class="lg:pt-0 pt-10 lg:w-1/2 w-full">
+              <p class="mb-6 text-end">Я психолог, семейный психотерапевт, специалист по работе с семьями, взрослыми и подростками</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap w-11/12">
+            <div class="flex space-x-4">
+              <i class="fa-brands fa-instagram mt-3"></i>
+              <p class="text-left pb-7">основной способ связи - инстаграм, где Вы можете познакомиться со мной поближе через фотографии и видео. Кроме того, в сторис публикуются окошки на запись.</p>
+            </div>
+            <div class="flex space-x-4">
+              <i class="fa-brands fa-telegram mt-3"></i>
+              <p class="text-left pb-10">через телеграм или whatsapp Вы можете записаться на консультацию, а также задать все интересующие Вас вопросы.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-2/5 w-full">
+          <img src="assets/images/4.jpeg" class="w-full">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="container py-12 m-auto md:flex hidden items-center justify-between">
+        <ul class="space-x-8 flex justify-between text-xl text-white/70">
+          <li class="lg:w-auto w-full"><a href="#s-chem-rabotayo" class="hover:underline underline-offset-2">с чем работаю</a></li>
+          <li class="lg:w-auto w-full"><a href="#obo-mne" class="hover:underline underline-offset-2">обо мне</a></li>
+          <li class="lg:w-auto w-full"><a href="#skolko-stoit" class="hover:underline underline-offset-2">сколько стоит</a></li>
+          <li class="lg:w-auto w-full"><a href="#format-vstrech" class="hover:underline underline-offset-2">формат работы</a></li>
+          <li class="lg:w-auto w-full"><a href="#contact" class="hover:underline underline-offset-2">контакты</a></li>
+        </ul>
+    
+        <ul class="text-lg flex space-x-8">
+          <li>
+            <a href="tel:+79054960000">
+              <i class="fa-solid fa-phone hover:text-blue-400 text-white"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=79054960000&text=Здравствуйте, хочу записаться на консультацию.&nbsp;">
+              <i class="fa-brands fa-whatsapp hover:text-green-300 text-white"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@levina.pro">
+              <i class="fa-solid fa-at hover:text-blue-500 text-white"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/levimation">
+              <i class="fa-brands fa-telegram hover:text-blue-700 text-white"></i>
+            </a>
+          </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+</body>
+</html>
