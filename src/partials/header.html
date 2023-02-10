@@ -1,0 +1,53 @@
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+<header x-data="{ isOpen: false }" class="bg-[#282429] fixed left-0 top-0 m-auto z-20 shadow-xl w-screen">
+  <nav class="container m-auto md:flex items-center justify-between hidden">
+    <p class="text-white Monserrat text-xl">Левина Алина, <span class="text-base">психолог</span></p>
+    <ul class="flex justify-between space-x-16 text-white/70 py-4 px-0">
+      <li class="lg:w-auto w-full"><a href="#s-chem-rabotayo" class="hover:underline underline-offset-2">с чем работаю</a></li>
+      <li class="lg:w-auto w-full"><a href="#obo-mne" class="hover:underline underline-offset-2">обо мне</a></li>
+      <li class="lg:w-auto w-full"><a href="#skolko-stoit" class="hover:underline underline-offset-2">сколько стоит</a></li>
+      <li class="lg:w-auto w-full"><a href="#format-vstrech" class="hover:underline underline-offset-2">формат работы</a></li>
+      <li class="lg:w-auto w-full"><a href="#contact" class="hover:underline underline-offset-2">контакты</a></li>
+    </ul>
+  </nav>
+
+  <div :class="isOpen ? 'border-b border-white/10' : ''" class="flex md:hidden py-4 px-6 text-white justify-between">
+    <p class="Monserrat text-xl">Левина Алина, <span class="text-base">психолог</span></p>
+    <button @click="isOpen = !isOpen" type="button" class="text-white/90 focus focus:text-white/60" aria-label=" menu">
+      <i :class="isOpen ? 'fa-xmark' : 'fa-bars'" class="fa-solid text-xl"></i>
+    </button>
+  </div>
+  
+  <ul :class="isOpen ? 'block' : 'hidden'" class="py-10 pt-6 px-6 flex flex-wrap text-xl space-y-6 text-white/70 justify-center overflow-scroll w-full">
+    <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#s-chem-rabotayo">с чем работаю</a></li>
+    <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#obo-mne">обо мне</a></li>
+    <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#skolko-stoit">сколько стоит</a></li>
+    <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#format-vstrech">формат работы</a></li>
+    <li @click="isOpen = !isOpen" class="lg:w-auto w-full"><a href="#contact">контакты</a></li>
+
+    <ul class="text-2xl flex space-x-8">
+      <li>
+        <a href="tel:+79054960000">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://api.whatsapp.com/send/?phone=79054960000&text=Здравствуйте, хочу записаться на консультацию.&nbsp;" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:hello@levina.pro">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://t.me/levimation">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </li>
+    </ul>
+  </ul>
+</header>
+

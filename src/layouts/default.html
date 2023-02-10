@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{> head }}
+</head>
+<body class="bg-[#282429] m-auto text-gray-300">
+
+    {{> header }}
+
+    {{> body }}
+
+    {{> footer }}
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+</body>
+</html>
