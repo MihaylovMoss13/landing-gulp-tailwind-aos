@@ -76,6 +76,24 @@ body div[data-accordion=collapse] ul li {
   font-size: 1.2rem;
   padding-bottom: 5px;
 }
+body .convar__item label {
+  border: 1px solid #d8d8d8;
+  width: 100%;
+}
+body .convar__item label:hover {
+  background-color: #d8d8d8;
+}
+body .convar__item input {
+  display: none;
+}
+body .convar__item input:checked + label {
+  border-color: linear-gradient(180deg, #39ff52 0, #1e8201);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#39ff52), to(#1e8201));
+  background-image: -webkit-linear-gradient(top, #39ff52, #1e8201);
+  background-image: -o-linear-gradient(top, #39ff52 0, #1e8201 100%);
+  background-image: linear-gradient(180deg, #39ff52 0, #1e8201);
+  color: #ffffff;
+}
 body .btn {
   font-weight: 700;
   background-color: #39ff52;
@@ -87,7 +105,7 @@ body .btn {
   -webkit-box-shadow: 0 0.5625em 1.125em rgba(44, 220, 43, 0.75);
   box-shadow: 0 0 1.125em rgba(44, 220, 43, 0.75);
   -webkit-transition: opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
-  transition: opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
+  transition: opacity 2.15s linear, -webkit-box-shadow 0.15s linear;
   -o-transition: box-shadow 0.15s linear, opacity 0.15s linear;
   transition: box-shadow 0.15s linear, opacity 0.15s linear;
   transition: box-shadow 0.15s linear, opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
@@ -96,14 +114,14 @@ body .btn:hover {
   -webkit-box-shadow: 0 0 3.125em rgba(44, 220, 43, 0.75);
   box-shadow: 0 0 2.125em rgba(44, 220, 43, 0.75);
   -webkit-transition: opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
-  transition: opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
+  transition: opacity 2.15s linear, -webkit-box-shadow 0.15s linear;
   -o-transition: box-shadow 0.15s linear, opacity 0.15s linear;
   transition: box-shadow 0.15s linear, opacity 0.15s linear;
   transition: box-shadow 0.15s linear, opacity 0.15s linear, -webkit-box-shadow 0.15s linear;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#39ff52), to(#1e8201));
-  background-image: -webkit-linear-gradient(top, #39ff52, #1e8201);
-  background-image: -o-linear-gradient(top, #39ff52 0, #1e8201 100%);
-  background-image: linear-gradient(180deg, #39ff52 0, #1e8201);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e8201), to(#39ff52));
+  background-image: -webkit-linear-gradient(top, #1e8201, #39ff52);
+  background-image: -o-linear-gradient(top, #1e8201 0, #39ff52 100%);
+  background-image: linear-gradient(180deg, #1e8201 0, #39ff52);
 }
 body .btn:focus-visible {
   outline: 0;

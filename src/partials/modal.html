@@ -1,0 +1,50 @@
+<!-- Dialog Contents -->
+<div id="dialog-content" style="display: none;max-width: 820px; padding: 0rem 0rem;">
+  <div class="grid items-left lg:grid-cols-2">
+    <div class="hidden lg:flex">
+      <img src="./assets/images/1.jpeg" />
+    </div>
+    <div class="py-8 px-3 lg:px-10">
+      <h2 class="font-semibold text-2xl">Запишитесь прямо сейчас!</h2>
+      <h3 class="text-md pt-1">Вы можете оставить контактные данные и я вам перезвоню.</h3>
+      <form action="./formSend.php" method="POST" class="grid pt-4 grid-cols-1 space-y-6">
+        <div class="convar">
+          <h3 class="font-semibold pb-2">Как вам удобно получить ответ?</h3>
+          <div class="grid gap-2 grid-cols-2">
+            <div class="flex justify-center convar__item convar__item_telephone">
+              <input class="hidden convar__input" type="radio" id="detailresp-radio-1" name="convar" value="По телефону" checked="checked">
+              <label class="py-2 w-full cursor-pointer rounded-lg flex justify-center convar__label" for="detailresp-radio-1">
+                <span class="convar__label-inner">
+                  <span class="convar__label-text">По телефону</span>
+                </span>
+              </label>
+            </div>
+            <div class="flex justify-center convar__item convar__item_whatsapp">
+              <input class="hidden convar__input" type="radio" id="detailresp-radio-2" name="convar" value="WhatsApp">
+              <label class="py-2 w-full cursor-pointer rounded-lg flex justify-center convar__label" for="detailresp-radio-2">
+                WhatsApp
+              </label>
+            </div>
+            <div class="flex justify-center convar__item convar__item_telegram">
+              <input class="hidden convar__input" type="radio" id="detailresp-radio-4" name="convar" value="Telegram">
+              <label class="py-2 w-full cursor-pointer rounded-lg flex justify-center convar__label" for="detailresp-radio-4">
+                <span class="convar__label-inner">
+                  <span class="convar__label-text">Telegram</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <input type="text" placeholder="Имя" required class="border-[1px] border-neutral-300 px-5 py-3 rounded-lg focus:outline-none" />
+        <input type="tel" placeholder="Телефон" required class="border-[1px] border-neutral-300 px-5 py-3 rounded-lg outline-0 focus:outline-none" />
+        <div class="grid lg:gap-2 gap-5 pt-2 justify-center">
+          <button type="submit" class="btn bg-green-800 shadow-2xl shadow-green-800 text-white rounded-lg py-4 px-9 uppercase">Перезвоните мне</button>
+          <label for="label-agree">
+            <input type="checkbox" id="label-agree" name="" checked="checked">
+            Вы соглашаетесь с <a href="" class="border-b-2 border-black/20">условиями обработки персональных данных</a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
